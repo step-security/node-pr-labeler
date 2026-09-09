@@ -15,7 +15,7 @@
   "license": "MIT",
   "devDependencies": {
     "@vercel/ncc": "^0.45.0",
-    "nock": "^13.0.9",
+    "nock": "^14.0.17",
     "standard": "^16.0.3",
     "tap": "^16.0.0"
   },
