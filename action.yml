@@ -1,0 +1,14 @@
+name: 'Node.js PR labelling'
+description: 'Applies labels to nodejs/node PRs based off of which files have changed'
+author: 'step-security'
+inputs:
+  repo-token:
+    description: 'Token for the repository. Can be passed in using `{{ secrets.GITHUB_TOKEN }}`.'
+    required: false
+    default: ${{ github.token }}
+  configuration-path:
+    description: 'The path inside the target repository where the .yml config file with filepaths -> labels mapping exists.'
+    required: true
+runs:
+  using: 'node24'
+  main: 'dist/index.js'
