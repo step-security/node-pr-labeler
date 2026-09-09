@@ -1,0 +1,13 @@
+{
+  "data": [
+    {
+      "event": "labeled",
+      "actor": {
+        "login": "step-security-bot"
+      },
+      "label": {
+        "name": "testlabel"
+      }
+    }
+  ]
+}
