@@ -5,7 +5,7 @@ const nock = require('nock')
 const github = require('@actions/github')
 
 const nodeRepo = require('../lib/node-repo')
-const client = github.getOctokit('phony-repo-token-for-tests')
+const client = github.getOctokit('phony-repo-token-for-tests', { request: { fetch: globalThis.fetch } })
 
 const readFixture = require('./read-fixture')
 
